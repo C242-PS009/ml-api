@@ -3,8 +3,11 @@ name = "ml-api"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "flask>=3.0.3",
-    "tensorflow>=2.13.1",
+    "gunicorn>=23.0.0",
+    "keras-nlp>=0.17.0",
+    "nltk>=3.9.1",
+    "tensorflow>=2.14.0",
 ]
