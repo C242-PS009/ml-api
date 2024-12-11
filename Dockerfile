@@ -18,4 +18,4 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 # Run the server
 EXPOSE 8000
-CMD [ "uv", "run", "gunicorn", "-b", "0.0.0.0:8000", "main:app" ]
+CMD [ "uv", "run", "gunicorn","-w", "4", "--threads", "2", "-b", "0.0.0.0:8000", "main:app" ]
